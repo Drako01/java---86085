@@ -1,5 +1,7 @@
 package com.coderhouse;
 
+import java.util.Scanner;
+
 //import java.util.Scanner;
 
 public class Clase02 {
@@ -199,5 +201,21 @@ public class Clase02 {
 		
 		System.out.println(PI);
 		*/
+		
+		// Verifica si una persona es mayor de edad (>= 18 años).
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Ingrese su Edad: ");
+		byte edad =  scanner.nextByte();
+		byte expectativaDeVida = 80;
+		
+		if(edad < 18) {
+			System.err.println("Usted es menor");
+		} else if(edad <= 0 || edad > expectativaDeVida) {
+			System.err.println("Error, La edad ingresada es incorrecta");
+		}else {
+			System.out.println("Puede ingresar");
+		}
+		
+		scanner.close();
 	}
 }
