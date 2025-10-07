@@ -147,6 +147,11 @@ public class IteracionesClase03 {
 		palabras.remove("Coder"); // Elimina por valor
 		palabras.set(3, "Otra"); // Para reemplazar
 		System.out.println("La Lista palabras: "+palabras);
+		
+		// Usando foreach
+		palabras.forEach( palabra -> {
+			System.out.println("(Usando foreach) Palabra: "+palabra);
+		});
 	}
 
 }
