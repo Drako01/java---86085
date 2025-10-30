@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS java_coderhouse_2;
-USE  java_coderhouse_2;
+CREATE DATABASE IF NOT EXISTS java_coderhouse;
+USE  java_coderhouse;
 
 SELECT * FROM alumnos;
 SELECT * FROM cursos;
